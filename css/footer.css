@@ -1,0 +1,77 @@
+footer{
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+footer a{
+    text-decoration: none;
+    font-family: var(--other-font);
+    color: var(--second-text-color);
+}
+footer p{
+    font-size: 16px;
+}
+.footer__pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+    margin: 30px auto;
+}
+@media (min-width: 992px){
+footer{
+     margin: 100px 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer nav{
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+/*footer a{*/
+/*    text-decoration: none;*/
+/*    font-family: var(--other-font);*/
+/*    color: var(--second-text-color);*/
+/*}*/
+/*footer p{*/
+/*    font-size: 16px;*/
+/*}*/
+.footer__pages{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+}
+@media (min-width: 1261px){
+    .footer__text-about-rights{
+        width: 20%;
+    }
+}
+@media (min-width: 1700px){
+    .footer__pages p{
+        font-size:21px;
+    }
+    .footer__text-about-rights p{
+        font-size: 21px;
+    }
+}

@@ -1,20 +1,17 @@
+
+@media (min-width: 1200px){
 .contact-form-page__landing main{
   margin-top: 150px;
   display: flex;
   gap: 50px;
 }
-.contact-page-content{
-  border: 3px solid antiquewhite;
-}
+
 .contact-page-content h1{
   font-size: 48px;
 }
 .contact-page-content h2{
   font-size: 32px;
   margin: 40px 0;
-}
-.contact-page-content__list{
-
 }
 .contact-page-content__list-item {
   list-style: none;
@@ -37,12 +34,21 @@
   margin: 0 10px 0 0;
   display: inline-block;
 }
+.contact-us-page__logos-container {
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px;
+}
 
+.contact-us-page__logo-container{
+  max-width: 150px;
+}
 .form-container{
   width: 600px;
   height: auto;
   background-color: var(--main-landing-color);
-  z-index: 100;
+  z-index: 40;
   box-shadow: -1px 3px 17px -1px rgba(0,0,0,0.78);
   -webkit-box-shadow: -1px 3px 17px -1px rgba(0,0,0,0.78);
   -moz-box-shadow: -1px 3px 17px -1px rgba(0,0,0,0.78);
@@ -90,12 +96,12 @@ form textarea{
   .field input:focus + label,
   .field input:valid + label {
     top: -5px;
-    color: green;
+    color: white;
     font-size: 14px;
   }
   .field :focus,
   .field :valid {
-      box-shadow: 0 2px 0 yellow;
+      box-shadow: 0 2px 0 white;
   }
   .field input {
     width: 100%;
@@ -228,4 +234,4 @@ form textarea{
   -ms-transform: translateX(10px);
   -o-transform: translateX(10px);
   transform: translateX(10px)
-}
+}}

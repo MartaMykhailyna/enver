@@ -1,19 +1,25 @@
-
-@media (min-width: 1200px){
 .contact-form-page__landing main{
-  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  gap: 50px;
+  margin-top: 150px;
+  flex-direction: column;
 }
-
+.contact-page-content{
+  width: 100%;
+  padding: 0 30px;
+}
 .contact-page-content h1{
-  font-size: 48px;
+  font-size: 45px;
+  margin-bottom: 30px;
 }
 .contact-page-content h2{
-  font-size: 32px;
-  margin: 40px 0;
+  font-size: 28px;
+  margin-bottom: 30px;
+
 }
 .contact-page-content__list-item {
+  color: white;
   list-style: none;
 }
 .contact-page-content__list-item:not(:last-child) {
@@ -37,18 +43,34 @@
 .contact-us-page__logos-container {
   max-width: 400px;
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
+  margin: 0 auto 50px;
+  align-items: center;
 }
-
 .contact-us-page__logo-container{
   max-width: 150px;
 }
+/*.contact-us-page__logos-container {*/
+/*  max-width: 400px;*/
+/*  display: grid;*/
+/*  grid-template-columns: 1fr 1fr; */
+/*  gap: 10px;*/
+/*}*/
+
+/*.contact-us-page__logo-container{*/
+/*  max-width: 150px;*/
+/*}*/
+.contact-form-page__landing,
+.contact-form-page__container{
+  padding: 0;
+}
 .form-container{
-  width: 600px;
+  /*max-width: 600px;*/
+  width: 100%;
   height: auto;
   background-color: var(--main-landing-color);
-  z-index: 40;
+  z-index: 20;
   box-shadow: -1px 3px 17px -1px rgba(0,0,0,0.78);
   -webkit-box-shadow: -1px 3px 17px -1px rgba(0,0,0,0.78);
   -moz-box-shadow: -1px 3px 17px -1px rgba(0,0,0,0.78);
@@ -80,7 +102,7 @@ form textarea{
     height: 40px;
     margin: 30px 0;
     box-shadow: 0 2px 0 white;
-  } 
+  }
   .field label {
     position: absolute;
     top: 50%;
@@ -117,7 +139,7 @@ form textarea{
     height: 40px;
     margin: 30px 0;
     box-shadow: 0 2px 0 white;
-  } 
+  }
   .field-pass label {
     position: absolute;
     top: 50%;
@@ -141,7 +163,7 @@ form textarea{
     select:focus,
     select:valid {
       box-shadow: 0 2px 0 white;
-  } 
+  }
   .field-pass input, select {
     width: 100%;
     height: 100%;
@@ -234,4 +256,37 @@ form textarea{
   -ms-transform: translateX(10px);
   -o-transform: translateX(10px);
   transform: translateX(10px)
-}}
+}
+@media(min-width: 600px){
+  .form-container{
+    margin: 0 auto;
+  }
+  .field label,
+  select{
+    font-size: 20px;
+  }
+}
+@media(min-width: 768px){
+  .form-container{
+    max-width: 600px;
+  }
+}
+@media (min-width: 1200px){
+  .contact-form-page__container{
+    padding: 0 40px;
+  }
+  .contact-form-page__landing main{
+    gap: 50px;
+    flex-direction: row;
+  }
+  .contact-page-content h1{
+    font-size: 48px;
+  }
+  .contact-page-content h2{
+    font-size: 32px;
+    margin: 40px 0;
+  }
+  .contact-us-page__logos-container{
+    margin: 0 30px 50px;
+  }
+}

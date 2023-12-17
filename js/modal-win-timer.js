@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    getLocation();
     const modal = document.getElementById("modal-window");
     const closeButton = document.getElementById("close-button");
     const container = document.getElementsByClassName('container')
@@ -50,13 +51,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     setInterval(() => updateCountdown(), 1000);
-    // function showLoader() {
-    //     const countdownContainer = document.querySelector('.clock-container');
-    //     const loader = document.querySelector('.loader');
-    //     setTimeout(() => {
-    //         countdownContainer.style.opacity = 1;
-    //         loader.remove();
-    //     }, 1000);
-    // }
-    //
-    // showLoader();
+////////////////////////////////
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            function(position) {
+                alert("Your location:\nLatitude: " + position.coords.latitude + "\nLongitude: " + position.coords.longitude);
+            },
+            // function(error) {
+            //     alert("Error getting location: " + error.message);
+            // }
+        );
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}

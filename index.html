@@ -17,8 +17,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="effects.css" class="cssfx">
-    <script src="cssfx.min.js"></script>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/contact-us.css">
 </head>
@@ -300,31 +298,32 @@
     <button id="scrollToTopButton" class="btn__3to-top-container"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></button>
     <div id="modal-window" class="">
         <div class="modal-content">
-        <button id="close-button" class="close"><i class="fa-solid fa-xmark"></i></button>
-        <h2>Time to New Year</h2>
-        <p>Даруємо знижку -20% до кінця 2023 року!</p>
-        <div class="clock-container">
-            <div id="year" class="year">0000</div>
-            <div class="countdown">
-                <div class="time">
-                    <h2 id="days">00</h2>
-                    <small>днів</small>
-                </div>
-                <div class="time">
-                    <h2 id="hours">00</h2>
-                    <small>годин</small>
-                </div>
-                <div class="time">
-                    <h2 id="minutes">00</h2>
-                    <small>хвилин</small>
-                </div>
-                <div class="time">
-                    <h2 id="seconds">00</h2>
-                    <small>секунд</small>
+            <button id="close-button" onclick="closeModal()" class="close"><i class="fa-solid fa-xmark" style="color: #fff"></i></button>
+            <h2>Time to New Year</h2>
+            <p>Даруємо знижку -20% до кінця 2023 року!</p>
+            <div class="clock-container">
+                <div id="year" class="year">0000</div>
+                <div class="countdown">
+                    <div class="time">
+                        <h2 id="days">00</h2>
+                        <small>днів</small>
+                    </div>
+                    <div class="time">
+                        <h2 id="hours">00</h2>
+                        <small>годин</small>
+                    </div>
+                    <div class="time">
+                        <h2 id="minutes">00</h2>
+                        <small>хвилин</small>
+                    </div>
+                    <div class="time">
+                        <h2 id="seconds">00</h2>
+                        <small>секунд</small>
+                    </div>
                 </div>
             </div>
+            <a href="contact-form.html" class="modal-window__btn-contact-us form-inline" style="text-decoration: none;">Contact us</a>
         </div>
-    </div>
     </div>
 <!--        <button onclick="getLocation()">Get Location</button>-->
     </div>

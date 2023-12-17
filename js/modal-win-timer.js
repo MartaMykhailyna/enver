@@ -1,19 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//     // getLocation();
-//     const modal = document.getElementById("modal-window");
-//     const closeButton = document.getElementById("close-button");
-//     const container = document.querySelector('.container');
-//
-//     // Show the modal window
-//     modal.style.display = "block";
-//     container.classList.add('blur');
-//
-//     // Close the modal on button click
-//     closeButton.addEventListener("click", function () {
-//         modal.style.display = "none";
-//         container.classList.remove('blur');
-//     });
-// });
 
 document.addEventListener('DOMContentLoaded', function () {
     // Отримуємо модальне вікно за ідентифікатором
@@ -21,15 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Відображення модального вікна при завантаженні сторінки
     modal.style.display = 'block';
-
-    // Отримуємо кнопку закриття за ідентифікатором
-    const btnClose = document.getElementById('close-button');
-
-    // Додаємо обробник подій для кнопки закриття
-    btnClose.addEventListener('click', function () {
-        modal.style.display = 'none';
-    });
 });
+
+// Функція для закриття модального вікна
+function closeModal() {
+    const modal = document.getElementById('modal-window');
+    modal.style.display = 'none';
+}
+
 
 ////////////////////////////////////////////////////////////////////////
     const nextYearContainer = document.querySelector('#year');

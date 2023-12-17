@@ -45,7 +45,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin: 0 auto 50px;
+  margin: 0 auto 100px;
   align-items: center;
 }
 .contact-us-page__logo-container{
@@ -84,7 +84,7 @@ form {
     /*width: 600px;*/
     /*height: 500px;*/
     /*background-color: var(--main-landing-color);*/
-    padding: 20px 45px;
+    padding: 20px;
   }
 form h3{
   margin: 0 auto;
@@ -260,7 +260,9 @@ form textarea{
 }
 @media(min-width: 600px){
   .form-container{
+    width: 90%;
     margin: 0 auto;
+    /*padding: 0 30px;*/
   }
   .field label,
   select{
@@ -289,5 +291,8 @@ form textarea{
   }
   .contact-us-page__logos-container{
     margin: 0 30px 50px;
+  }
+  form{
+    padding: 20px 40px;
   }
 }

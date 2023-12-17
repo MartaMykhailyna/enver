@@ -68,7 +68,8 @@
 .form-container{
   /*max-width: 600px;*/
   width: 100%;
-  height: auto;
+  height: 750px;
+  align-self: center;
   background-color: var(--main-landing-color);
   z-index: 20;
   box-shadow: -1px 3px 17px -1px rgba(0,0,0,0.78);

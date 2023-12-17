@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnBurger = document.querySelector('.navbar-toggler');
 
     function updateHeader() {
-        if (window.scrollY > 50 && !header.classList.contains('dark-background')) {
+        if (window.scrollY > 10 && !header.classList.contains('dark-background')) {
             header.classList.add("active");
-        } else if (window.scrollY <= 50) {
+        } else if (window.scrollY <= 10) {
             header.classList.remove("active");
         }
     }

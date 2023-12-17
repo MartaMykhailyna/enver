@@ -22,7 +22,7 @@
 </head>
 <body>
 <div class="landing">
-    <div class="container">
+    <div class="container pos-r">
     <header id="myHeader">
         <nav class="nav-menu navbar navbar-expand-lg p-0">
             <a class="navbar-brand" href="index.html">
@@ -296,8 +296,35 @@
         </nav>
     </footer>
     <button id="scrollToTopButton" class="btn__3to-top-container"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></button>
+    <div id="modal-window" class="pos-r">
+        <button id="close-button"><i class="fa-solid fa-xmark"></i></button>
+        <h2>Time to New Year</h2>
+        <p>Даруємо знижку -20% до кінця 2023 року!</p>
+        <div class="clock-container">
+            <div id="year" class="year">0000</div>
+            <div class="countdown">
+                <div class="time">
+                    <h2 id="days">00</h2>
+                    <small>днів</small>
+                </div>
+                <div class="time">
+                    <h2 id="hours">00</h2>
+                    <small>годин</small>
+                </div>
+                <div class="time">
+                    <h2 id="minutes">00</h2>
+                    <small>хвилин</small>
+                </div>
+                <div class="time">
+                    <h2 id="seconds">00</h2>
+                    <small>секунд</small>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </div>
+<script src="js/modal-win-timer.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
